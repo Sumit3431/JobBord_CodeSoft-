@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Arizonia&family=Playwrite+IN:wght@100..400&family=Playwrite+VN:wght@100..400&display=swap');More actions
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.container{
+    background: linear-gradient(90deg,rgb(254, 132, 18),white ,rgb(15, 211, 15) );
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    background-color: rgb(222, 218, 212);
+    width: 80%;
+    height: 100%;
+}
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    border: 3px solid #5d12d5;
+    border-radius: 50%;
+    border-right-color: transparent ;
+    position: relative;
+    margin-top: 10px;
+}
+.navbar .logo::before{
+    content: "LANDING-PAGE";
+    color: black;
+    font-size: 7px;
+    position: absolute;
+    top: 30%;
+    left: 40%;
+    font-weight: bold;
+    font-family: "Playwrite VN", serif;
+    
+  
+    
+    
+}
+.navbar{
+    background-color: rgb(196, 191, 191);
+    margin: auto;
+    width: 100%;
+}
+.navbar , .navlist{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    
+
+}
+.navlist li{
+    padding: 20px;
+    list-style: none;
+}
+.navlist a{
+    text-decoration: none; 
+    font-size: 18px;
+    color: rgb(99, 8, 8);
+    font-weight: bold;
+    position: relative;
+}
+.navlist a::before{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: black;
+
+}
+
+.navlist a:hover::before{
+    width: 100%;
+    
+}
+.hero img{
+    height: 90vh;
+    width: 120vh;
+    background: none;
+}
+
+.hero{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+.hero img{
+    width: 40vw;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+
+}
+.hero h3{
+    color: rgb(9, 22, 128);
+    font-size: 1.5rem;
+    padding-bottom: none;
+
+}
+.hero p{
+    font-size: 20px;
+    color: rgb(59, 27, 27);
+    text-transform: inherit;
+    line-height: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.content button{
+    padding-top: 20px;
+    padding: 10px 25px;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: rgb(84, 191, 162);
+    border: none;
+    border-bottom: 2px;
+}
+.content button:hover{
+    background-color: white;
+    color: green;
+}
+#element{
+    color: rgb(9, 22, 128);
+    font-weight: bold;
+    font-size: 1.5rem;
+    
+}
+
+.hamburger{
+    display: none;
+}
+.hamburger span{
+    width: 30px;
+    height: 3px;
+    background-color: black;   
+    margin: 5px;
+    display: block;
